@@ -1,36 +1,98 @@
-.contact {
-    background-image: url('https://lightsandlife.in/images/bgs.jpg');
-    padding: 46px 0px 46px 0px;
-    height:auto;
-    width:100%;
+.contact_w3agile {
+    background: url("https://lightsandlife.in/images/bgc.jpg") no-repeat 0px 0px fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+h3.title-w3 {
+    text-align: center;
+    font-size: 48px;
+    color: cornflowerblue;
+    padding-top: 62px;
+    font-family: math;
+}
+.contact_w3agile form {
+    width: 75%;
+    padding-bottom: 74px;
+    margin: 4em auto 0;
+}
+.input_form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
-
-.contact_form {
-    background-color: #fff;
-    padding: 12px;
-    width: 770px;
-    row-gap: 12px;
-
-    
-}
-
-.input_width {
-    width: 100%;
+.con-form.text-center {
     display: flex;
-    column-gap: 12px;
-    row-gap: 12px;
 }
 
-.input_width input,textarea {
-    width: 100%;
-    padding: 12px;
+.contact_w3agile form input[type="text"],
+.contact_w3agile form input[type="email"] {
+    background: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #fff;
+    padding: 12px 12px;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    width: 46%;
+    display: inline-block;
+    font-style: italic;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
 }
-.btn {
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
+
+.contact_w3agile form input[type="text"] {
+    margin-right: 7%;
+}
+
+.contact_w3agile textarea {
+    background: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #fff;
+    padding: 12px 12px;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    margin: 40px 0 30px;
+    font-style: italic;
+    height: 13em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    resize: none;
+}
+
+.contact_w3agile form input[type="submit"] {
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px 0;
+    font-size: 1.3em;
+    color: #fff;
+    outline: none;
+    width: 21%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.contact_w3agile form input[type="submit"]:hover,
+.contact_w3agile form input[type="text"]:hover,
+.contact_w3agile form input[type="email"]:hover,
+.contact_w3agile textarea:hover {
+    border: 2px solid #41BAE3;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
 }

@@ -4,6 +4,10 @@ import "./Gallery.css";
 let array = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]
 
 const Gallery = () => {
+
+    
+
+    
     return (
 
 

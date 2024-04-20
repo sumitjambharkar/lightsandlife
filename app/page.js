@@ -5,6 +5,7 @@ import Slider from './components/Slider'
 import OurService from './components/OurService'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import Client from './components/Client'
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <OurService/>
       <Gallery/>
       <Contact/>
+      <Client/>
     </div>
   )
 }

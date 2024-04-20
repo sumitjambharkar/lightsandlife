@@ -2,21 +2,23 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
-        <div className="contact_form">
-          <div className="input_width">
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <div className="input_width">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <div className="input_width">
-            <input type="submit" className="btn"/>
-          </div>
-         
+    <div class="contact_w3agile" id="contact">
+            <div class="container wow fadeInUp animated animated">
+                <h3 class="title-w3">Contact Us</h3>
+
+                <form action="#" method="post">
+                    <div className="input_form">
+                    <input type="text" placeholder="Name" name="Name" required=""/>
+                    <input type="email" placeholder="Email" name="Email" required=""/>
+                    </div>
+                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                    <div class="con-form text-center">
+                        <input type="submit" value="Send"/>
+                    </div>
+                </form>
+
+            </div>
         </div>
-    </div>
   )
 }
 
