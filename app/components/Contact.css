@@ -1,0 +1,36 @@
+.contact {
+    background-image: url('https://lightsandlife.in/images/bgs.jpg');
+    padding: 46px 0px 46px 0px;
+    height:auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact_form {
+    background-color: #fff;
+    padding: 12px;
+    width: 770px;
+    row-gap: 12px;
+
+    
+}
+
+.input_width {
+    width: 100%;
+    display: flex;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.input_width input,textarea {
+    width: 100%;
+    padding: 12px;
+}
+.btn {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+}

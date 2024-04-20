@@ -1,0 +1,35 @@
+.our_service {
+    background-image: url('https://lightsandlife.in/images/bgs.jpg');
+    padding: 46px 0px 46px 0px;
+    height:480px;
+}
+
+.our_service h1 {
+    text-align: center;
+    color: #23b684;
+    font-size: 40px;
+}
+.our_main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 44px;
+}
+
+.our_box {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 27px;
+}
+.our_tilte span {
+    font-size: 29px;
+    color: white;
+    font-weight: 500;
+}
+
+.our_para span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+}

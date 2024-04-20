@@ -1,0 +1,20 @@
+.gallery {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.gallery_box {
+    width:25%;
+    float: left;
+}
+.gallery_section h1 {
+    font-size: 46px;
+    text-align: center;
+    padding: 28px;
+}
+
+.gallery_box img {
+    width: 100%;
+    float: left;
+    height: 290px;
+}
