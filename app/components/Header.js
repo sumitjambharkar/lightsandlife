@@ -21,8 +21,8 @@ const Header = () => {
         <span>Lights & Life</span>
      </div>
      <div className="header_contact">
-      <CallIcon fontSize="small"/><li>8898699998</li>
-      <EmailIcon fontSize="small"/><li>sujma23@gmail.com</li>
+      <CallIcon fontSize="small"/><li> 9137979183</li>
+      <EmailIcon fontSize="small"/><li>support@lightsandlife.in</li>
      </div>
     </div>
   )

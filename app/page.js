@@ -6,6 +6,8 @@ import OurService from './components/OurService'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Client from './components/Client'
+import Footer from './components/Footer';
+import Map from './components/Map'
 
 const page = () => {
   return (
@@ -18,6 +20,8 @@ const page = () => {
       <Gallery/>
       <Contact/>
       <Client/>
+      <Map/>
+      <Footer/>
     </div>
   )
 }
