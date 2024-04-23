@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Gallery.css";
+import Swal from 'sweetalert2'
+import 'sweetalert2/src/sweetalert2.scss';
 
 let array = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]
 

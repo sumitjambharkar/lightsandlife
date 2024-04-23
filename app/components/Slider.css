@@ -36,6 +36,15 @@
   button:hover {
     background-color: #555;
   }
+
+  .course-slider h2 {
+    margin-top: 136px;
+    font-size: 60px;
+}
+
+.course-slider p {
+    font-size: 28px;
+}
   
   .prev {
     left: 0;

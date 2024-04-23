@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import "./Navbar.css"
 import Link from 'next/link';
 import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
 
@@ -15,26 +17,26 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='brand'>
-        <h1>Sumit Jambharkar</h1>
+        <h1>Lights & Life</h1>
       </div>
       <div className={`drawer ${drawerOpen ? 'open' : ''}`} id="appDrawer">
         <li>
           <Link onClick={toggleDrawer} href="/">Home</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/sale-report">About</Link>
+          <Link onClick={toggleDrawer} href="/">About</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/add-products">Services</Link>
+          <Link onClick={toggleDrawer} href="/">Services</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/add-products">Team</Link>
+          <Link onClick={toggleDrawer} href="/">Team</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/add-products">Gallery</Link>
+          <Link onClick={toggleDrawer} href="/">Gallery</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/add-products">Contact</Link>
+          <Link onClick={toggleDrawer} href="/">Contact</Link>
         </li>
         <div className='search'>
           <input placeholder='Type text here' type="text" />
@@ -43,15 +45,7 @@ const Navbar = () => {
       </div>
       <ul className='mobile-support'>
         <div onClick={toggleDrawer}>
-          {drawerOpen?<div class="hamburger-menu">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-          </div>:<div class="hamburger-menu">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-          </div>}
+          {drawerOpen?<CloseIcon fontSize='large' color='black'/>:<MenuIcon fontSize='large' color='black'/>}
 
         </div>
       </ul>

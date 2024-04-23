@@ -5,9 +5,9 @@ import Slider from './components/Slider'
 import OurService from './components/OurService'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
-import Client from './components/Client'
 import Footer from './components/Footer';
 import Map from './components/Map'
+import Special from './components/Special'
 
 const page = () => {
   return (
@@ -17,9 +17,9 @@ const page = () => {
       <Navbar/>
       <Slider/>
       <OurService/>
+      <Special/>
       <Gallery/>
       <Contact/>
-      <Client/>
       <Map/>
       <Footer/>
     </div>

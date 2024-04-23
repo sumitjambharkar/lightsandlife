@@ -1,27 +1,34 @@
 "use client"
-import { useState } from 'react';
-import "./Slider.css"
+import { useState,useEffect } from 'react';
+import "./Slider.css";
 
 const courses = [
     {
       title: 'TECHNICAL LIGHTS',
       description: 'Your Life Easier',
-      image: 'https://www.shutterstock.com/shutterstock/photos/1913774386/display_1500/stock-vector-colorful-template-banner-with-gradient-color-design-with-liquid-shape-1913774386.jpg',
+      image: 'https://res.cloudinary.com/clennation/image/upload/v1713859550/ref_01_te75i6.jpg', 
     },
     {
       title: 'DECORATIVE LIGHTS',
       description: 'Bring Magic To Home',
-      image: 'https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_640.jpg',
+      image: 'https://res.cloudinary.com/clennation/image/upload/v1713859547/IMG-20200928-WA0013_vofx9r.jpg',
     },
     {
       title: 'FIBER OPTIC LIGHTS',
       description: 'Feel More On Home',
-      image: 'https://lightsandlife.in/images/bann.jpg',
+      image: 'https://res.cloudinary.com/clennation/image/upload/v1713859544/bann_cvs5k6.jpg',
     },
   ];
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 5000); 
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentIndex]); 
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === courses.length - 1 ? 0 : prevIndex + 1));

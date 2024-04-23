@@ -53,22 +53,21 @@
   
   @media only screen and (max-width: 600px) {
     .drawer {
-      height: 100vh;
-      width: 100%;
+      height: auto;
       row-gap: 18px;
-      padding-left: 90px;
-      position: fixed;
-      top: 70px;
+      position: absolute;
+      top: 154px;
+      padding: 66px;
       flex-direction: column;
       display: flex;
-      left: -100%;
+      left: -136%;
       background-color: black;
-      padding-top: 60px;
       transition: left 0.3s ease;
       z-index: 2;
       overflow: hidden;
       transition: 0.3s;
-    }
+      width: 100%;
+  }
     .drawer li a {
       text-decoration: none;
       color: white;
@@ -79,7 +78,13 @@
     .drawer.open {
       left: 0;
     }
-    
+    .header_logo {
+      display: none;
+  }
+  .brand {
+    display: block;
+    font-family: math;
+ }  
     .mobile-support {
       display: block;
     }
