@@ -1,6 +1,13 @@
 "use client"
 import React, { useRef, useState } from 'react';
 import "./Special.css"
+import image0ne from "../image/01.jpg";
+import Image from 'next/image';
+import imagetwo from "../image/g9.jpg"
+import imagethree from "../image/g5.jpg"
+import imagefour from "../image/g10.jpg"
+import imagefive from "../image/gautam.jpg"
+import imagesix from "../image/g12.jpg"
 
 const Special = () => {
 
@@ -50,26 +57,24 @@ const Special = () => {
         onMouseLeave={handleMouseUp}
         >
           <div className='item'>
-            <img className='item_img' src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg" alt="" />
+            <Image className='item_img' src={image0ne} alt="ff" />
           </div>
           <div className='item'>
-         <img className='item_img'  src="https://cityfurnish.com/blog/wp-content/uploads/2023/12/living-room-with-large-clock-green-peacock-wall-min.jpg" alt="" />
+            <Image className='item_img' src={imagetwo} alt="ff" />
           </div>
           <div className='item'>
-       <img className='item_img' src="https://cuttingedgeds.com/wp-content/uploads/2019/12/Luxury-Homes-Interior-Design-1-1.jpg" alt="" />
+            <Image className='item_img' src={imagethree} alt="ff" />
           </div>
           <div className='item'>
-            <img className='item_img' src="https://www.decorilla.com/online-decorating/wp-content/uploads/2022/06/Open-home-with-mid-century-modern-interior-design-2-scaled.jpeg" alt="" />
+            <Image className='item_img' src={imagefour} alt="ff" />
           </div>
           <div className='item'>
-        <img className='item_img' src="https://www.decorpot.com/images/1482092601an-exclusive-guide-to-2bhk-home-interior-designs.jpg" alt="" />
+            <Image className='item_img' src={imagefive} alt="ff" />
           </div>
           <div className='item'>
-            <img className='item_img' src="https://kraftivo.in/magazine/wp-content/uploads/2020-Modern-Space-scaled.jpg" alt="" />
+            <Image className='item_img' src={imagesix} alt="ff" />
           </div>
-          <div className='item'>
-         <img className='item_img' src="https://www.decorpot.com/images/1277726740mixing-styles-for-unique-home-deep-dive-into-interior-design.jpg" alt="" />
-          </div>
+        
           
         </div>
       </div>
