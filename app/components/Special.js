@@ -46,7 +46,13 @@ const Special = () => {
         <div className='permenet'>
          
          <h3>TRENDY DESIGNS</h3>
-<p>Donec non nibh in dui sagittis finibus. Duis suscipit</p>
+<p>blending style and functionality to brighten every corner with elegance.
+
+
+
+
+
+</p>
         
         </div>
         <div className='wrapper'
