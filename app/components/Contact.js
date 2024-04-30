@@ -1,25 +1,80 @@
+"use client";
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    Name: "",
+    Email: "",
+    Message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendData = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        // Reset form fields after successful submission
+        setFormData({ Name: "", Email: "", Message: "" });
+      } else {
+        console.error("Form submission failed:", await response.text());
+      }
+    } catch (error) {
+      console.error("An unexpected error occurred:", error);
+    }
+  };
+
   return (
     <div class="contact_w3agile" id="contact">
-            <div class="container wow fadeInUp animated animated">
-                <h3 class="title-w3">Contact Us</h3>
+      <div class="container wow fadeInUp animated animated">
+        <h3 class="title-w3">Contact Us</h3>
 
-                <form action="#" method="post">
-                    <div className="input_form">
-                    <input type="text" placeholder="Name" name="Name" required=""/>
-                    <input type="email" placeholder="Email" name="Email" required=""/>
-                    </div>
-                    <textarea name="Message" placeholder="Message" required=""></textarea>
-                    <div class="con-form text-center">
-                        <input type="submit" value="Send"/>
-                    </div>
-                </form>
+        <form onSubmit={sendData}>
+          <div className="input_form">
+            <input
+              value={formData.Name}
+              onChange={handleChange}
+              required
+              type="text"
+              placeholder="Name"
+              name="Name"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+              value={formData.Email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <textarea
+            name="Message"
+            placeholder="Message"
+            value={formData.Message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <div class="con-form text-center">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
 
-            </div>
-        </div>
-  )
-}
-
-export default Contact
+export default Contact;

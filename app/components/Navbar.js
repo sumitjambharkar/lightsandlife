@@ -24,19 +24,19 @@ const Navbar = () => {
           <Link onClick={toggleDrawer} href="/">Home</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/">About</Link>
+          <Link onClick={toggleDrawer} href="/about">About</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/">Services</Link>
+          <Link onClick={toggleDrawer} href="/services">Services</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/">Team</Link>
+          <Link onClick={toggleDrawer} href="/team">Team</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/">Gallery</Link>
+          <Link onClick={toggleDrawer} href="/gallery">Gallery</Link>
         </li>
         <li>
-          <Link onClick={toggleDrawer} href="/">Contact</Link>
+          <Link onClick={toggleDrawer} href="/contact">Contact</Link>
         </li>
         <div className='search'>
           <input placeholder='Type text here' type="text" />
