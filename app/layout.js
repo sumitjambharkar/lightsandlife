@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+      <meta name="google-site-verification" content="lkhQSALU4Q44_E9p44oOPMObygFuBPDZTOuQ8YfyWZ4" />
+      
+      <GoogleAnalytics gaId="G-RMNNKW13LX" />
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
