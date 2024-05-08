@@ -2,8 +2,8 @@
 import { useState } from "react";
 import "./Contact.css";
 import config from "../../config";
-import axios from "axios";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
