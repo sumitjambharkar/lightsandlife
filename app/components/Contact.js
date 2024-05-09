@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import "./Contact.css";
+import config from "../config";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,25 +18,23 @@ const Contact = () => {
 
   const sendData = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      const result  = await axios.post(`${config}/api/contact`, {
+        name: formData.Name,
+        number: formData.Email,
+        message: formData.Message,
       });
-
-      if (response.ok) {
-        console.log("Form submitted successfully");
-        // Reset form fields after successful submission
-        setFormData({ Name: "", Email: "", Message: "" });
-      } else {
-        console.error("Form submission failed:", await response.text());
-      }
+      Swal.fire({
+        title: `Enquiry Send Successfully`,
+        text: "You clicked the button!",
+        icon: "success"
+      });
+      setFormData({Name: "",
+      Email: "",
+      Message: ""})
     } catch (error) {
-      console.error("An unexpected error occurred:", error);
+      console.error(error);
+      console.log(error);
     }
   };
 
