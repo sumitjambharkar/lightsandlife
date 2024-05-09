@@ -1,5 +1,5 @@
 "use client"
-import config from '@/app/config';
+import config from '@/config';
 import axios from 'axios';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';

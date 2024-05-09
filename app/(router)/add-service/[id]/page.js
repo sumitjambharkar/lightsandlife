@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Editor } from "@tinymce/tinymce-react";
 import { useRouter } from 'next/navigation'
 import Swal from 'sweetalert2'
-import config from "@/app/config";
+import config from "@/config";
 
 const Page = ({params}) => {
     const editorRef = useRef(null);

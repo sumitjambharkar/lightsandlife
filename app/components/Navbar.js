@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
-import config from '../config';
+import config from '../../config';
 
 const Navbar = () => {
 
@@ -61,9 +61,9 @@ const Navbar = () => {
         <li>
           <Link onClick={toggleDrawer} href="/service">Services</Link>
         </li>
-        <li>
-          <Link onClick={toggleDrawer} href="/team">Team</Link>
-        </li>
+        {user?<li>
+          <Link onClick={toggleDrawer} href="/add-service">Add Service</Link>
+        </li>:null}
         <li>
           <Link onClick={toggleDrawer} href="/gallery">Gallery</Link>
         </li>

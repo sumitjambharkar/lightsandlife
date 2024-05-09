@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./Contact.css";
-import config from "../config";
+import config from "../../config";
 import axios from "axios";
 import Swal from "sweetalert2";
 

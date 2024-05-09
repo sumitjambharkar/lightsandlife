@@ -1,5 +1,5 @@
-import connectDatabase from "@/app/libs/database";
-import Service from "@/app/model/Service";
+import connectDatabase from "@/libs/database";
+import Service from "@/model/Service";
 import { NextResponse } from "next/server";
 import slugify from "slugify";
 const cloudinary = require('cloudinary').v2;

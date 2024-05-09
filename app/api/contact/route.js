@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import Contact from "@/app/model/Contact";
-import connectDatabase from "@/app/libs/database";
+import Contact from "@/model/Contact";
+import connectDatabase from "@/libs/database";
 const nodemailer = require("nodemailer");
 
 connectDatabase();

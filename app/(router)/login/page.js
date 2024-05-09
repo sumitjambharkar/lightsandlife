@@ -1,5 +1,5 @@
 "use client"
-import config from '@/app/config';
+import config from '@/config';
 import axios from 'axios';
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
