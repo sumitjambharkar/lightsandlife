@@ -53,7 +53,7 @@ const page = () => {
             <label for="password">Password</label>
             <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password"  required/>
         </div>
-        <button type="submit">Login</button>
+        <button class="login_btn" type="submit">Login</button>
     </form>
 </div>
   )

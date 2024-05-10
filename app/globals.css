@@ -275,10 +275,10 @@
   border-radius: 5px;
 }
 
-button {
+.login_btn {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #41BAE3;
   color: #fff;
   border: none;
   border-radius: 5px;
